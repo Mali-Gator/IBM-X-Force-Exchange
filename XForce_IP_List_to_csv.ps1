@@ -1,3 +1,5 @@
+## This script takes a list of ip addresses in the "input_ip_addresses.csv" file and scans them against IBM's X-force database. It returns the risk score associated with each IP address.
+
 # Define the API key and base URL for IBM X-Force
 $apiKey = "[INSERT API KEY HERE]"
 $apiPassword = "[INSERT API PASSWORD HERE]"
