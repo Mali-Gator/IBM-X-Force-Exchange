@@ -1,10 +1,11 @@
-# Store the API key and password in variables
-# It is recommended to store the IBM API key and password as a variable so the key does not have to be coded into the script.
+## This script takes a list of ip addresses in the "input_ip_addresses.csv" file and scans them against AbuseIPDB. It returns results of how many times that IP was reported to AbuseIPDB
 
-$apiKey = "[IBM X-FORCE EXCHANGE API KEY]"
-$apiPassword = "[IBM X-FORCE EXCHANGE API PASSWORD]"
+# Store the API key and password in variables
+$apiKey = [INSERT API KEY HERE]
+$apiPassword = [INSERT API PASSWORD HERE]
 
 # Ask the user to input the IP address
+
 while ($true) {
     # Ask the user to input the IP address
     $ipAddress = Read-Host -Prompt "Enter the IP address to scan"
@@ -44,5 +45,7 @@ $data = [PSCustomObject]@{
 }
 
 # Output the data to the terminal
+
 Write-Output "IP Address: $ip_address"
 Write-Output "Risk Score: $score"
+
